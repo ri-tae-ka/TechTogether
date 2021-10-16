@@ -47,9 +47,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 }
 /* background of nav */
 .bg-light {
-    color: black;
-    --bs-bg-opacity: 1;
-    background-color: #bd8f1e57!important;
+    background-color: #f1db6e45 !important;
 }
 
 .btn {
