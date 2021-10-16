@@ -30,3 +30,20 @@
     height: 100%;
     width: 70%;
 }
+
+/* Navbar links to right */
+a.nav-link.active {
+    padding-left: 60rem !important;
+}
+/* fix position of navbar */
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/* background of nav */
+.bg-light {
+    color: black;
+    --bs-bg-opacity: 1;
+    background-color: #bd8f1e57!important;
+}
