@@ -31,13 +31,17 @@
     width: 70%;
 }
 
+.activity-heading {
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
 /* Navbar links to right */
 a.nav-link.active {
     padding-left: 60rem !important;
 }
 /* fix position of navbar */
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
-    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -47,3 +51,30 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     --bs-bg-opacity: 1;
     background-color: #bd8f1e57!important;
 }
+
+.btn {
+    background: #d9b034;
+    background-image: -webkit-linear-gradient(top, #d9b034, #e0e014);
+    background-image: -moz-linear-gradient(top, #d9b034, #e0e014);
+    background-image: -ms-linear-gradient(top, #d9b034, #e0e014);
+    background-image: -o-linear-gradient(top, #d9b034, #e0e014);
+    background-image: linear-gradient(to bottom, #d9b034, #e0e014);
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #e0e014;
+    background-image: -webkit-linear-gradient(top, #e0e014, #d9b034);
+    background-image: -moz-linear-gradient(top, #e0e014, #d9b034);
+    background-image: -ms-linear-gradient(top, #e0e014, #d9b034);
+    background-image: -o-linear-gradient(top, #e0e014, #d9b034);
+    background-image: linear-gradient(to bottom, #e0e014, #d9b034);
+    text-decoration: none;
+  }
