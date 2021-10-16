@@ -9,6 +9,8 @@
 }
 
 .title-image  {
+    height: 400px;
+    width: 400px;
     margin-left: 50px;
     margin-bottom: 10px;
 }
