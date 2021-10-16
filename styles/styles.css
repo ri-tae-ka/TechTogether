@@ -1,0 +1,23 @@
+.about-heading {
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.about-us {
+    font-size: 20px;
+    padding-top: 75px;
+}
+
+.contact-heading {
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.contact-details {
+    padding-top: 85px;
+}
+
+.contact-image {
+    height: 100%;
+    width: 70%;
+}
