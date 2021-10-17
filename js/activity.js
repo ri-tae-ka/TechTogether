@@ -5,34 +5,33 @@ const api_url =
 // Defining async function
 async function getapi(url) {
     // Storing response
-    const response = await fetch('https://localhost:3000/activities/');
+    const response = await fetch('http://localhost:3000/activities');
     
     // Storing data in form of JSON
     var data = await response.json();
 	console.log(data)
-    //data = JSON.parse(data);
-    //show(data);
+    console.log(typeof(data))
+    show(data);
 }
 
 // Function to define innerHTML for HTML table
 function show(data) {
-    let tab = `<div class="card"><div class="card-body">`;
+    let tab='';
     
     // Loop to access all rows 
-    for (let key in data) {
-		console.log(r);
-        tab += `<h5 style="font-weight:bold; text-align:center;" class="card-title">${data[key]}</h5>
+    for (let row in data) {
+        tab += `<div class="card" style="background-color:white;"><div class="card-body"><h5 style="font-weight:bold; text-align:center;" class="card-title">${data[row].Name}</h5>
 		<div class='parent'>
 			<div class='children' style="flex: 2;">
 				<button style="font-weight:bold;" class='btnTag'>VIRTUAL</button>
-				<p><span style='font-weight:bold;'>Time:</span> 30 min<br/><span style='font-weight:bold;'>Supply:</span> Pen</p>
+				<p><span style='font-weight:bold;'>Time:</span> 30 min<br/><span style='font-weight:bold;'>Supply:</span>${data[row].Supply_tag}</p>
 			</div>
 			<div class='children' style="flex: 4;">
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<p class="card-text">${data[row].Description}</p>
 			</div>
 		</div>
 	  </div>
-	</div>`;
+	</div></br>`;
     }
     // Setting innerHTML as tab variable
     document.getElementById("results").innerHTML = tab;
