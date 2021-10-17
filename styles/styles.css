@@ -58,7 +58,6 @@ html{
 
 .contact-heading {
     padding-top: 25px;
-    padding-bottom: 50px;
 }
 
 .contact-details {
@@ -68,7 +67,7 @@ html{
 .contact-image {
     margin-left: 50px;
     height: 100%;
-    width: 70%;
+    width: 80%;
 }
 
 #navbarNav{
