@@ -5,7 +5,7 @@ const api_url =
 // Defining async function
 async function getapi(url) {
     // Storing response
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    const response = await fetch('https://localhost:3000/activities/');
     
     // Storing data in form of JSON
     var data = await response.json();
