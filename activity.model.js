@@ -52,7 +52,7 @@ Activity.getBySupply = (supply, result) => {
 };
 
 Activity.getAll = result => {
-  sql.query("SELECT * FROM activities", (err, res) => {
+  sql.query(`select * from activities`, (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(null, err);
@@ -62,5 +62,19 @@ Activity.getAll = result => {
     result(null, res);
   });
 };
+
+Activity.getTagsById = (id,result) => {
+  sql.query(`select t.tag_name from activities a join activities_tags at2 on a.Activity_id = at2.Activity_id 
+    join tags t on t.tag_id = at2.Tag_id WHERE a.activity_id=${id}`, (err, res) => {
+    if (err) {
+      console.log("error: ", err);
+      result(null, err);
+      return;
+    }
+    console.log("activities: ", res);
+    result(null, res);
+  });
+};
+
 
 module.exports = Activity;

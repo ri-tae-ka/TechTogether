@@ -7,4 +7,7 @@ module.exports = app => {
   // Retrieve activities with supply
   app.get("/activities/:supply", activities.findBySupply);
 
+   // Retrieve activities with id
+  app.get("/activities/id/:id", activities.findTagsById);
+
 };
